@@ -3,7 +3,7 @@ Description: My second assignment
 Author: Harjas kaur gill
 Date: 21-09-2024
 """
-
+# Ready for peer review
 
 #SIMPLE DATA TYPES
 first_name = "Harjas"
