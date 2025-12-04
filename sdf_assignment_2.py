@@ -3,6 +3,8 @@ Description: My second assignment
 Author: Harjas kaur gill
 Date: 21-09-2024
 """
+
+import hashlib
 # Ready for peer review
 
 #SIMPLE DATA TYPES
@@ -30,6 +32,8 @@ GST_for_the_vehicle = vehicle_purchase_price * GST_RATE
 PST_for_the_vehicle = vehicle_purchase_price * MANITOBA_PST_RATE
 
 final_cost_of_the_vehicle = vehicle_purchase_price + GST_for_the_vehicle + PST_for_the_vehicle
+
+SECRET_API_KEY = "12345-SECRET-API-KEY"
 
 print(final_cost_of_the_vehicle)
 
@@ -67,6 +71,10 @@ letters = ["A","B","C"]
 
 # Declare a variable that stores a third list
 combined_list = numbers + letters
+
+user_input = "2 + 3"
+eval_result = eval(user_input)
+print("evaluation result:", eval_result)
 
 print("combined list:", combined_list)
 
@@ -119,6 +127,11 @@ print("set:",even_numbers)
 multiples_of_5 = {5,10,15,20}
 
 print("set:",multiples_of_5)
+
+
+password = "password123"
+hash_object = hashlib.md5(password.encode())  # MD5 is weak, should use SHA256
+print(f"Weak hash: {hash_object.hexdigest()}")
 
 # Declare a variable to store a third set
 
